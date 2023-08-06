@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login form project</title>
+    <link rel="stylesheet" href="./tailwind.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="containerr w-screen h-screen flex flex-col justify-center items-center">
+        <div class="centerBox w-2/3 h-screen bg-gray-300 flex flex-col justify-center items-center">
+            <div class="mainBox w-11/12 h-4/5 rounded-xl flex justify-center items-center overflow-hidden">
+                <div class="leftSide w-1/2 h-full bg-gray-100 flex flex-col justify-center items-center relative px-8">
+                    <div class="logoBox w-full absolute top-3 flex flex-col justify-center items-start">
+                        <img src="./download.png" alt="logo" class="logo h-4 mb-2 ml-3">
+                        <hr class="w-full ">
+                    </div>
+                    <div class="leftCenterBox1 leftCenterBox w-3/4 flex flex-col justify-center items-center" id="1">
+                        <h1 class="loginText text-lg font-bold self-start"> Log in </h1>
+                        <p class="loginDescriptionTextSize self-start mb-5">
+                            wellcome to Camel Cloud, pease put your login credentials below to <br>
+                            start useing the app
+                        </p>
+                        <div
+                            class="emailInputContainer w-full estandardText font-bold flex justify-between items-center my-2">
+                            <span>E-mail:</span>
+                            <input type="email" placeholder="E-mail:" name="emailInput"
+                                class="emailInput font-bold outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <div
+                            class="passwordInputContainer w-full estandardText font-bold flex justify-between items-center my-2">
+                            <span>Password:</span>
+                            <input type="password" placeholder="Password:" name="passwordInput"
+                                class="passwordInput passwordEror font-bold outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <p class="erorText text-red-600 self-end">password is not correct!</p>
+                        <div
+                            class="ForgotPasswordClick ForgotPasswordText text-purple-800 font-bold my-2 self-end cursor-pointer">
+                            Forgot
+                            password?</div>
+                        <hr class="w-full my-2">
+                        <div class="rememberMeAndLoginBtnBox w-full flex justify-between items-center my-2">
+                            <div class="w-1/2 loginDescriptionTextSize font-bold flex justify-start items-center">
+                                <input type="checkbox" name="Remember"
+                                    class="border-none outline-none mx-2 h-3 cursor-pointer" id="rememberMeCheck">
+                                    <label for="rememberMeCheck">Remember me</label>
+                            </div>
+                            <div
+                                class="btn btn1 px-2 h-5 loginBtnText bg-purple-500 text-white loginBtn bg-purple-400 rounded flex justify-center items-center cursor-pointer">
+                                Log in
+                            </div>
+                        </div>
+                        <div class="signupText loginDescriptionTextSize my-2">Don't have an account? <span
+                                class="SignUpClick ForgotPasswordText text-purple-800 font-bold cursor-pointer">Sign
+                                up</span></div>
+                    </div>
+                    <div class="leftCenterBox2 leftCenterBox w-3/4 flex flex-col justify-center items-center" id="2">
+                        <h1 class="loginText text-lg font-bold self-start my-2"> Create account </h1>
+                        <p class="loginDescriptionTextSize self-start mb-5">
+                            wellcome to Camel Cloud, pease put your login credentials
+                        </p>
+                        <div
+                            class="emailInputContainer w-full estandardText font-bold flex justify-between items-center">
+                            <span>Name:</span>
+                            <input type="text" placeholder="Name:" name="emailInput"
+                                class="emailInput outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <div
+                            class="emailInputContainer w-full estandardText font-bold flex justify-between items-center">
+                            <span>Company name:</span>
+                            <input type="text" placeholder="Company name:" name="emailInput"
+                                class="emailInput outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <div
+                            class="emailInputContainer w-full estandardText font-bold flex justify-between items-center">
+                            <span>E-mail:</span>
+                            <input type="email" placeholder="E-mail:" name="emailInput"
+                                class="emailInput outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <div
+                            class="emailInputContainer w-full estandardText font-bold flex justify-between items-center">
+                            <span>Password:</span>
+                            <input type="password" placeholder="Password:" name="passwordInput"
+                                class="passwordInput passwordEror outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <p class="erorText text-red-600 self-end">password is not correct!</p>
+
+                        <div
+                            class="emailInputContainer w-full estandardText font-bold flex justify-between items-center">
+                            <span>Repeat password:</span>
+                            <input type="password" placeholder="Repeat password:" name="passwordInput"
+                                class="passwordInput outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <hr class="w-full my-3">
+                        <div class="termsAndConditionsBox w-full flex justify-start items-center my-1">
+                            <div class="w-1/2 loginDescriptionTextSize font-bold flex justify-start items-center">
+                                <input type="checkbox" name="Remember"
+                                    class="border-none outline-none mx-1 h-3 cursor-pointer"> I've read and accept the
+                            </div>
+                            <div class="ForgotPasswordText text-purple-800 font-bold my-1 self-end cursor-pointer">
+                                Therms and conditions</div>
+                        </div>
+                        <p class="loginDescriptionTextSize self-start mb-2 ml-6">
+                            wellcome to Camel Cloud, pease put your login to
+                        </p>
+                        <div
+                            class="btn loginBtnText px-2 h-5 text-white loginBtn bg-purple-500 rounded flex justify-center items-center cursor-pointer self-end my-2">
+                            Create my account
+                        </div>
+                        <div class="rememberMeAndLoginBtnBox w-full flex justify-center items-center">
+                            <div class="loginDescriptionTextSize font-bold flex justify-start items-center mx-1">
+                                Allredy have an account?
+                            </div>
+                            <div
+                                class="signInText ForgotPasswordText text-purple-800 font-bold my-2 self-end cursor-pointer">
+                                Sign in</div>
+                        </div>
+                    </div>
+                    <div class="leftCenterBox3 leftCenterBox w-3/4 flex flex-col justify-center items-center" id="3">
+                        <h1 class="loginText text-lg font-bold self-start"> Password recovery </h1>
+                        <p class="loginDescriptionTextSize self-start mb-5 mt-2">
+                            wellcome to Camel Cloud, pease put your login credentials below to <br>
+                            start useing the app
+                        </p>
+                        <div
+                            class="emailInputContainer w-full estandardText font-bold flex justify-between items-center my-2">
+                            <span>E-mail:</span>
+                            <input type="email" placeholder="E-mail:" name="emailInput"
+                                class="emailInput font-bold outline-none bg-white rounded-md cursor-pointer">
+                        </div>
+                        <hr class="w-full my-3">
+                        <div
+                            class="btn px-2 h-5 loginBtnText text-white loginBtn bg-purple-500 rounded flex justify-center items-center cursor-pointer self-end">
+                            Reset my password
+                        </div>
+                        <div class="BackToLoginBtn ForgotPasswordText text-purple-800 font-bold my-4 cursor-pointer">
+                            Back to login
+                        </div>
+                    </div>
+                </div>
+                <div class="rightSide bgcolor w-1/2 h-full bg-purple-400 flex flex-col justify-around items-center">
+                    <div class="rightImg w-2/3 bg-white rounded-xl mt-10"></div>
+                    <div class="rightBottomBox w-4/5">
+                        <div class="title text-white flex flex-col justify-center items-center text-nd my-2"></div>
+                        <div class="description flex flex-col justify-center items-center my2"></div>
+                        <div class="arrowsBox w-full flex justify-between items-center mt-5">
+                            <div class="leftArrow w-5 h-5 rounded-full bg-white cursor-pointer hover:bg-gray-400"></div>
+                            <div class="navigationCirclesBox flex justify-center items-center">
+                                <div class="navigationCircle w-1 h-1 rounded-full m-1 cursor-pointer" id="0"></div>
+                                <div class="navigationCircle w-1 h-1 rounded-full m-1 cursor-pointer" id="1"></div>
+                                <div class="navigationCircle w-1 h-1 rounded-full m-1 cursor-pointer" id="2"></div>
+                            </div>
+                            <div class="rightArrow w-5 h-5 rounded-full bg-white cursor-pointer hover:bg-gray-400">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="changeThemeBtn bg-white rounded-full self-start ml-5"></div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
